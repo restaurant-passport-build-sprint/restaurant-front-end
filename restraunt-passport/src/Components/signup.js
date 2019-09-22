@@ -29,7 +29,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
         <Field type="email" name="email" placeholder="email" />
       </div>
       
-      <button disabled={isSubmitting}>Register &rarr;</button>
+      <button disabled={isSubmitting}>Signup &rarr;</button>
     </Form>
     
   );
