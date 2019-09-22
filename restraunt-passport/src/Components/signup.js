@@ -8,6 +8,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
   return (
       
     <Form>
+    <div className='mainForm_Display'>
       <div>
         {touched.username && errors.username && <p>{errors.username}</p>}
         <Field type="text" name="username" placeholder="Username" />
@@ -30,6 +31,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
       </div>
       
       <button disabled={isSubmitting}>Signup &rarr;</button>
+      </div>
     </Form>
     
   );
