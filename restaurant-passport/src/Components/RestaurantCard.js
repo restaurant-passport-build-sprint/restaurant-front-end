@@ -1,10 +1,12 @@
 import React from 'react'
-import data from "../restaurant.json"
 
 export default function RestaurantCard(props) {
     return (
-        <div>
-            <h2>Restaurant Name</h2>
+        <div id={props.id}>
+            <h2>Name: {props.name}</h2>
+            <p>Address: {props.address}, {props.city}, {props.state}, {props.zip}</p>
+            <p>Rating: {props.rating}</p>
+            <p>Type: {props.type}</p>
         </div>
     )
 }

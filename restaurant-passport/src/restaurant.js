@@ -1,4 +1,4 @@
-[{"id":"72fb2960-a53b-4654-8bb2-ac00822a50b7","name":"Thoughtworks","address":"6 Service Parkway","city":"Sacramento","state":"California","zip":"94286","type":"Buttons","rating":4.86},
+var data = [{"id":"72fb2960-a53b-4654-8bb2-ac00822a50b7","name":"Thoughtworks","address":"6 Service Parkway","city":"Sacramento","state":"California","zip":"94286","type":"Buttons","rating":4.86},
     {"id":"16baac52-0a98-4f05-bf9a-d49a5fa2dab5","name":"Kamba","address":"33661 Bonner Park","city":"South Bend","state":"Indiana","zip":"46699","type":"Pineapple - Canned, Rings","rating":1.53},
     {"id":"26764d96-cb53-4426-b7b8-d83c2a52cbe9","name":"Twitternation","address":"44935 Dwight Court","city":"Birmingham","state":"Alabama","zip":"35236","type":"Jam - Blackberry, 20 Ml Jar","rating":1.68},
     {"id":"9182bf31-f815-4ef1-93ad-0cc738cbf479","name":"Mynte","address":"84129 New Castle Parkway","city":"Wichita","state":"Kansas","zip":"67230","type":"Ecolab - Mikroklene 4/4 L","rating":2.01},
@@ -18,3 +18,5 @@
     {"id":"78c9393f-d213-436b-b1ac-67dddb6c4ea2","name":"Latz","address":"356 Fisk Terrace","city":"Lincoln","state":"Nebraska","zip":"68505","type":"Juice - Apple, 341 Ml","rating":2.0},
     {"id":"91c76106-342a-4a35-a345-b80c3d2d66ba","name":"Rhycero","address":"11324 Del Mar Plaza","city":"Tucson","state":"Arizona","zip":"85732","type":"Cleaner - Comet","rating":3.63},
     {"id":"108c2582-9742-4b4e-b3c4-37f8224d89a8","name":"Wordware","address":"48000 Mcguire Park","city":"Akron","state":"Ohio","zip":"44305","type":"Transfer Sheets","rating":2.52}]
+
+export { data };
