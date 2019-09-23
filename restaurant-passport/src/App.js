@@ -1,12 +1,11 @@
 import React from 'react';
-import {BrowserRouter as Route} from 'react-dom';
 import './App.css';
-import Header from './Header';
+import FormikRegisterForm from './Components/signup';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <FormikRegisterForm/>
     </div>
   );
 }
