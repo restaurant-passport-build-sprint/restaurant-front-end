@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-icons": "^3.7.0",
+    "react-scripts": "3.1.2"
+=======
     "axios": "^0.19.0",
     "formik": "^1.5.8",
     "react": "^16.9.0",
@@ -10,6 +16,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.2",
     "yup": "^0.27.0"
+>>>>>>> af6c94a7eff91aad72108adcafff8da164227bcc
   },
   "scripts": {
     "start": "react-scripts start",
