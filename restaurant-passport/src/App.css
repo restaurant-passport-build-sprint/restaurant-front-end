@@ -20,3 +20,25 @@
 .App-link {
   color: #09d3ac;
 }
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100;
+  padding: 0.75rem 2rem;
+  background: #F5F5F5;
+  z-index: 1;
+}
+
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn{
+  background: transparent;
+  border: none;
+  outline: none;
+
+}
