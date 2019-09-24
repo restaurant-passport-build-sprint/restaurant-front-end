@@ -51,10 +51,12 @@ export default function RestaurantCard(props) {
           <i class="fas fa-pepper-hot"></i>
           <h2>{props.name}</h2>
           <p>
-            Address: {props.address}, {props.city}, {props.state}, {props.zip}
+            Cuisine: {props.type}
           </p>
-          <p>Rating: {props.rating}</p>
-          <p>Type: {props.type}</p>
+          <p>Visited On: {props.date}</p>
+          <p>You Rated It: {props.rating} / 5</p>
+          <p>You Spent: ${props.price}</p>
+          <p>Your Review: {props.comments}</p>
         </div>
       </div>
     </Link>

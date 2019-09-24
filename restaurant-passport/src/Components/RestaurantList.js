@@ -26,14 +26,14 @@ export default function RestaurantList(props) {
       <CardList>
         {props.items.map(item => (
           <RestaurantCard
-            id={item.id}
-            name={item.name}
-            address={item.address}
-            city={item.city}
-            state={item.state}
-            zip={item.zip}
-            rating={item.rating}
-            type={item.type}
+            id={item.user_id}
+            name={item.restaurant_name}
+            rating={item.food_rating}
+            type={item.restaurant_type}
+            comments={item.comments}
+            date={item.date_of_visit}
+            price={item.price}
+            photo={item.photo_of_order}
           />
         ))}
       </CardList>

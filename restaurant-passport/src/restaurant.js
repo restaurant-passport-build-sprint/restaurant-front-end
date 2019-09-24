@@ -1,21 +1,79 @@
-export default [{"id":"72fb2960-a53b-4654-8bb2-ac00822a50b7","name":"Thoughtworks","address":"6 Service Parkway","city":"Sacramento","state":"California","zip":"94286","type":"Buttons","rating":4.86},
-    {"id":"16baac52-0a98-4f05-bf9a-d49a5fa2dab5","name":"Kamba","address":"33661 Bonner Park","city":"South Bend","state":"Indiana","zip":"46699","type":"Pineapple - Canned, Rings","rating":1.53},
-    {"id":"26764d96-cb53-4426-b7b8-d83c2a52cbe9","name":"Twitternation","address":"44935 Dwight Court","city":"Birmingham","state":"Alabama","zip":"35236","type":"Jam - Blackberry, 20 Ml Jar","rating":1.68},
-    {"id":"9182bf31-f815-4ef1-93ad-0cc738cbf479","name":"Mynte","address":"84129 New Castle Parkway","city":"Wichita","state":"Kansas","zip":"67230","type":"Ecolab - Mikroklene 4/4 L","rating":2.01},
-    {"id":"d3037fdf-6903-4c8b-9288-42bc222105ca","name":"Youspan","address":"366 Derek Court","city":"Hartford","state":"Connecticut","zip":"06152","type":"Sugar - Brown, Individual","rating":2.69},
-    {"id":"f9155da9-ef38-4151-bac4-6c6d58431438","name":"Babblestorm","address":"353 Stephen Lane","city":"Rochester","state":"New York","zip":"14619","type":"Cake - Bande Of Fruit","rating":1.58},
-    {"id":"ad6eaf21-c42e-4974-9eeb-c234b91784ce","name":"Zoonder","address":"51 Butterfield Lane","city":"Oceanside","state":"California","zip":"92056","type":"Bread - Sticks, Thin, Plain","rating":2.67},
-    {"id":"cb8a17db-bbff-4f28-b35d-a740e180beb8","name":"Realblab","address":"6 Basil Point","city":"Pueblo","state":"Colorado","zip":"81010","type":"Bar Nature Valley","rating":1.86},
-    {"id":"93ba06fe-44e8-40c9-aac2-89eefd16184d","name":"Pixonyx","address":"3124 Sundown Court","city":"Riverside","state":"California","zip":"92505","type":"Clam - Cherrystone","rating":3.32},
-    {"id":"40c8ed14-e835-42c5-a722-8646df64d4fd","name":"Jetwire","address":"1138 Walton Terrace","city":"Mesquite","state":"Texas","zip":"75185","type":"Pepper - Roasted Red","rating":2.7},
-    {"id":"58a2c6ed-5f13-4062-b94e-9c8ca5f564b2","name":"Meezzy","address":"2 Rieder Trail","city":"New Haven","state":"Connecticut","zip":"06538","type":"Cheese - Asiago","rating":4.89},
-    {"id":"439701df-7333-458d-8b0d-eeae3505f21f","name":"Roomm","address":"795 Mendota Hill","city":"Houston","state":"Texas","zip":"77240","type":"Cherries - Maraschino,jar","rating":3.19},
-    {"id":"9592ee2b-65e9-455c-b3af-c668b256a0c0","name":"Nlounge","address":"9 Red Cloud Pass","city":"Round Rock","state":"Texas","zip":"78682","type":"Creme De Banane - Marie","rating":1.54},
-    {"id":"c12104b6-b2ad-4efb-b5cd-91befe8806db","name":"Teklist","address":"2192 Vidon Court","city":"San Antonio","state":"Texas","zip":"78250","type":"Vinegar - White","rating":4.14},
-    {"id":"8881ceeb-55f1-4b04-91b5-311821b3a985","name":"Eadel","address":"16372 Red Cloud Terrace","city":"Madison","state":"Wisconsin","zip":"53710","type":"Carbonated Water - Peach","rating":4.99},
-    {"id":"e68650f4-dbe9-42d5-915b-7515b8c7839a","name":"Ozu","address":"6546 Declaration Plaza","city":"Jackson","state":"Mississippi","zip":"39216","type":"Vodka - Moskovskaya","rating":2.79},
-    {"id":"9aa02903-eaa3-4db6-9b17-1125057a78a7","name":"Linkbuzz","address":"31910 Orin Avenue","city":"Wichita","state":"Kansas","zip":"67210","type":"Chicken - Leg, Fresh","rating":4.73},
-    {"id":"78c9393f-d213-436b-b1ac-67dddb6c4ea2","name":"Latz","address":"356 Fisk Terrace","city":"Lincoln","state":"Nebraska","zip":"68505","type":"Juice - Apple, 341 Ml","rating":2.0},
-    {"id":"91c76106-342a-4a35-a345-b80c3d2d66ba","name":"Rhycero","address":"11324 Del Mar Plaza","city":"Tucson","state":"Arizona","zip":"85732","type":"Cleaner - Comet","rating":3.63},
-    {"id":"108c2582-9742-4b4e-b3c4-37f8224d89a8","name":"Wordware","address":"48000 Mcguire Park","city":"Akron","state":"Ohio","zip":"44305","type":"Transfer Sheets","rating":2.52}]
+export default [{
+    restaurant_name: "Pizza Hut",
+    restaurant_type: "Italian-American cuisine",
+    user_id: 1,
+    item_name: "pizza",
+    photo_of_order:
+      "https://www.pngfind.com/pngs/m/327-3272002_free-png-pizza-png-png-image-with-transparent.png",
+    food_rating: 3.0,
+    comments: "this is a great place to eat",
+    price: 7.45,
+    wait_time: "30min",
+    date_of_visit: "01/30/2019"
+  },
+  {
+    restaurant_name: "Burger King",
+    restaurant_type: "Fast Food",
+    user_id: 2,
+    item_name: "Whopper",
+    photo_of_order:
+      "https://www.stickpng.com/assets/images/5882488ae81acb96424ffaaf.png",
+    food_rating: 4.0,
+    comments: "fast fun service",
+    price: 8.74,
+    wait_time: "10min",
+    date_of_visit: "02/05/2019"
+  },
+  {
+    restaurant_name: "Mcdonalds",
+    restaurant_type: "Fast-Food",
+    user_id: 3,
+    item_name: "Big Mac",
+    comments:
+      "i order with no pickles and received pickles i will not be returning",
+    price: 8.0,
+    wait_time: "9min",
+    date_of_visit: "03/10/2019",
+    photo_of_order: "https://i.redd.it/bydegsnwwhp11.png",
+    food_rating: 4.5
+  },
+  {
+    restaurant_name: "olive garden",
+    restaurant_type: "Italian cuisine",
+    user_id: 4,
+    item_name: "spaghetti and meatballs",
+    photo_of_order: "https://www.pastapass.com/images/dish1.png",
+    food_rating: 5.0,
+    comments: "my favorite go to spot ",
+    price: 12.1,
+    wait_time: "40min",
+    date_of_visit: "05/27/2019"
+  },
+  {
+    restaurant_name: "Chili's Grill & Bar ",
+    restaurant_type: "American cuisine",
+    user_id: 5,
+    item_name: "Chicken steak fish and chips",
+    photo_of_order:
+      "https://www.pngkey.com/png/detail/21-216126_chicken-steak-fish-and-chips.png",
+    food_rating: 5.0,
+    comments:
+      "the right amount of spice and the right amount of alcohol i :heart: this place",
+    price: 13.24,
+    wait_time: "45min",
+    date_of_visit: "04/09/2019"
+  },
+  {
+    restaurant_name: " Buffalo Wild Wings",
+    restaurant_type: "American cuisine",
+    user_id: 6,
+    item_name: "BBQ hot wings",
+    photo_of_order:
+      "http://www.pngmart.com/files/8/Grilled-Food-PNG-Clipart-Background.png",
+    food_rating: 4.0,
+    comments: "mm i had better wings",
+    price: 15.0,
+    wait_time: "40min",
+    date_of_visit: "01/30/2019"
+  }]
 
