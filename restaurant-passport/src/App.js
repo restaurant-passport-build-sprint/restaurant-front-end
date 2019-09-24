@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import { Route } from "react-router-dom";
-import RegisterForm from "./Components/signup";
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
-import Home from "./Components/Home";
-import RestaurantList from './Components/RestaurantList';
-import data from "./restaurant";
-import RestaurantSingle from "./Components/RestaurantSingle";
+import { Link, Route} from "react-router-dom";
+import RegisterForm from "./Components/signup"
+import Home from "./Components/Home"
+import Navigation from "./Components/Navigation"
+import Header from './Components/Header';
 
 function App() {
-  const [restaurant, setRestaurant] = useState(data)
-  console.log("restaurant props", restaurant)
   return (
     <div className="App">
       <Navigation />
-      <Route exact path="/" component={Home} />
-      <Route path="/signup" component={RegisterForm} />
-      <Route exact path="/restaurant-list" render={props => <RestaurantList items={restaurant} {...props} />} />
-      <Route path="/restaurant-list/:id" render={props => <RestaurantSingle items={restaurant} {...props} />} />
-      <Footer />
+      {/* <Route exact path="/" component={Home} />
+      <Route path="/Header" component={Header}/>
+      <Route path="/signup" component={RegisterForm} /> */}
     </div>
   );
 }
