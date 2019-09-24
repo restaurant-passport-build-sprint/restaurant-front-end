@@ -8,6 +8,9 @@ const FooterContainer = styled.div`
   padding: 0 1vw;
   background-color: #F5F5F5;
   height: 7vh;
+  position:absolute;
+  bottom:0;
+  width:100%;
 
   .fas{
       font-size: 2.2rem;

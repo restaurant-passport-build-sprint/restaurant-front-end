@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const RestaurantDiv = styled.div`
   width: 30%;
-  padding-top: 25%;
+  padding-top:40%;
   background-color: #ffecbe;
   position: relative;
   border-radius: 5px;

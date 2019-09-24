@@ -6,7 +6,7 @@ export default function Navigation() {
     <div className="nav-container">
       <nav className="menu">
         <img className="menu-logo" src="./logo192.png" />
-        <h1>FoodiePass</h1>
+        <h1 className="site-title">FoodiePass</h1>
         <div className="navigation">
           <ul className="menu-list">
             <li className="menu-list-item">
