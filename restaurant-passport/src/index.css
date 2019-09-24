@@ -7,21 +7,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, h2, h3, h4, h5, h6, a{
+  font-family: 'Lato', sans-serif;
+}
+
+p{
+  font-family: 'Libre Baskerville', serif;
 }
 
 .menu {
-  background-color: #f2f2f2;
+  background-color: #F5F5F5;
   box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   width: 100%;
-  height: 80px;
+  height: 7vh;
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
+  align-items:center;
 }
 
 .navigation {
@@ -50,10 +54,10 @@ code {
 }
 
 .menu-link {
-  color: #264d00;
+  color: #39491C;
   display: inline-block;
   height: 100%;
-  font-size: 16px;
+  font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
@@ -61,14 +65,16 @@ code {
   padding: 0 3px;
 }
 
-.menu__link:hover {
-  color: #ffaa3b;
+.menu-link:hover {
+  color: #F3C65D;
 }
 
 .menu-link-active {
-  color: #BF953F;
-  border-top: 4px solid #BF953F;
+  color: #F3C65D;
+  border-top: 4px solid #F3C65D;
   font-weight: 700;
+  font-size:1.3rem;
+  text-decoration:none;
 }
 
 .menu-logo {
@@ -80,13 +86,14 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
+  padding-left: 1vw;
 }
 
 .menu-search-button {
   height: 42px;
   width: 42px;
   border-radius: 50%;
-  border: 1px solid #c8c9ce;
+  border: 1px solid #F5F5F5;
   background-color: transparent;
   outline: none;
   cursor: pointer;
@@ -95,16 +102,19 @@ code {
 }
 
 .menu-search-form {
-  position: absolute;
-  top: 100%;
-  right: 0;
   padding: 10px;
   background-color: white;
 }
 
+.search-container{
+  position: absolute;
+  top: 9%;
+  left:2%;
+}
+
 .menu-search-input {
   outline: none;
-  border: 1px solid #c8c9ce;
+  border: 1px solid #F5F5F5;
   font-size: 18px;
   padding: 5px;
   font-weight: 300;
@@ -151,4 +161,12 @@ code {
   font-weight: lighter;
   letter-spacing: 1px;
   margin-bottom: 0.25em;
+}
+h1{
+  font-size: 3rem;
+  color: #39491C;
+}
+
+.header-container{
+  height:33vh;
 }
