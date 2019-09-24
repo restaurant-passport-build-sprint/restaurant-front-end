@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 export default function Navigation() {
   return (
@@ -7,26 +8,26 @@ export default function Navigation() {
         <img className="menu-logo" src="./logo192.png" />
         <h1>FoodiePass</h1>
         <div className="navigation">
-          <ul classname="menu-list">
+          <ul className="menu-list">
             <li className="menu-list-item">
-              <a className="menu-link-active" href="#">
+              <NavLink exact to="/" className="menu-link-active">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
+              <NavLink exact to="/" className="menu-link">
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
+              <NavLink exact to="/" className="menu-link">
                 contact
-              </a>
+              </NavLink>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
+              <NavLink to="/signup" className="menu-link">
                 SignUp
-              </a>
+              </NavLink>
             </li>
           </ul>{" "}
         </div>
