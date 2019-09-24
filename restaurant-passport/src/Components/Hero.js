@@ -6,7 +6,8 @@ import "../App.css";
 export default function Hero() {
   return (
     <header className="defaultHero"> 
-    <h1>This is hero</h1>
+    <h1>Need a foodie pass?</h1> 
+    <p>Explore new restaurants near you.</p>
       </header>
       
   )

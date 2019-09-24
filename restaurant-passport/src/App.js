@@ -11,10 +11,8 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Hero/>
       <Route exact path="/" component={Home} /> 
-      {/* <Route path="/Header" component={Header}/>
-      <Route path="/signup" component={RegisterForm} /> */} 
+      <Route path="/signup" component={RegisterForm} /> 
     </div>
   );
 }
