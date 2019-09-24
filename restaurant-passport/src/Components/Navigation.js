@@ -24,7 +24,7 @@ export default function Navigation() {
               </a>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
+              <a className="menu-link" href="/signup">
                 SignUp
               </a>
             </li>
