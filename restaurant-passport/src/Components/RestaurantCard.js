@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Restaurant = styled.div`
+const RestaurantDiv = styled.div`
   width: 30%;
   padding-top: 25%;
   background-color: #FFECBE;
@@ -43,7 +43,7 @@ const Restaurant = styled.div`
 
 export default function RestaurantCard(props) {
   return (
-    <Restaurant id={props.id}>
+    <RestaurantDiv id={props.id}>
       <div className="card-text">
         <i class="fas fa-pepper-hot"></i>
         <h2>{props.name}</h2>
@@ -53,6 +53,6 @@ export default function RestaurantCard(props) {
         <p>Rating: {props.rating}</p>
         <p>Type: {props.type}</p>
       </div>
-    </Restaurant>
+    </RestaurantDiv>
   );
 }
