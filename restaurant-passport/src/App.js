@@ -17,8 +17,8 @@ function App() {
       <Navigation />
       <Route exact path="/" component={Home} />
       <Route path="/signup" component={RegisterForm} />
-      <Route exact path="/restaurant-list" render={props => <RestaurantList itemsList={restaurant} {...props} />} />
-      <Route path="/restaurant-list/:id" render={props => <RestaurantSingle itemsSingle={restaurant} {...props} />} />
+      <Route exact path="/restaurant-list" render={props => <RestaurantList items={restaurant} {...props} />} />
+      <Route path="/restaurant-list/:id" render={props => <RestaurantSingle items={restaurant} {...props} />} />
       <Footer />
     </div>
   );

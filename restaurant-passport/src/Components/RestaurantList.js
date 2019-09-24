@@ -15,7 +15,7 @@ const CardList = styled.div`
 
 export default function RestaurantList(props) {
   console.log("props for restaurant list", props);
-  if (!props.itemsList){
+  if (!props.items){
     return (
       <div><h1>Loading Items...</h1></div>
     )
@@ -24,7 +24,7 @@ export default function RestaurantList(props) {
     <div>
       <h1>Visited Restaurants</h1>
       <CardList>
-        {props.itemsList.map(item => (
+        {props.items.map(item => (
           <RestaurantCard
             id={item.id}
             name={item.name}

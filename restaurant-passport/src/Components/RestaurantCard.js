@@ -47,7 +47,7 @@ export default function RestaurantCard(props) {
     <RestaurantDiv id={props.id}>
       <div className="card-text">
         <i class="fas fa-pepper-hot"></i>
-        <Link exact to={`restaurant-list/${props.id}`}><h2>{props.name}</h2></Link>
+        <Link to={`/restaurant-list/${props.id}`}><h2>{props.name}</h2></Link>
         <p>
           Address: {props.address}, {props.city}, {props.state}, {props.zip}
         </p>
