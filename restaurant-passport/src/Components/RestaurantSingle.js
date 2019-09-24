@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function RestaurantSingle(props) {
-    const restaurant = props.items.find(thing => thing.id === Number(props.match.params.id))
+    console.log("restaurant single", props)
+    const restaurant = props.itemsSingle.find(thing => thing.id === Number(props.match.params.id))
     return (
         <div>
             <h1>{restaurant.name}</h1>

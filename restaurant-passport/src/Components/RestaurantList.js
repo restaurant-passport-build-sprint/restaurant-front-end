@@ -2,6 +2,7 @@ import React from "react";
 import RestaurantCard from "./RestaurantCard";
 import styled from "styled-components";
 
+
 const CardList = styled.div`
   width: 50%;
   max-width: 1080px;
@@ -14,7 +15,7 @@ const CardList = styled.div`
 
 export default function RestaurantList(props) {
   console.log("props for restaurant list", props);
-  if (!props.items){
+  if (!props.itemsList){
     return (
       <div><h1>Loading Items...</h1></div>
     )
@@ -23,7 +24,7 @@ export default function RestaurantList(props) {
     <div>
       <h1>Visited Restaurants</h1>
       <CardList>
-        {props.items.map(item => (
+        {props.itemsList.map(item => (
           <RestaurantCard
             id={item.id}
             name={item.name}

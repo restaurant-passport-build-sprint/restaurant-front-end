@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom"
 
 const RestaurantDiv = styled.div`
   width: 30%;
@@ -46,7 +47,7 @@ export default function RestaurantCard(props) {
     <RestaurantDiv id={props.id}>
       <div className="card-text">
         <i class="fas fa-pepper-hot"></i>
-        <h2>{props.name}</h2>
+        <Link exact to={`restaurant-list/${props.id}`}><h2>{props.name}</h2></Link>
         <p>
           Address: {props.address}, {props.city}, {props.state}, {props.zip}
         </p>
