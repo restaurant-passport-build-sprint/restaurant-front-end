@@ -4,6 +4,7 @@ import React from "react";
 function Header() {
   return (
     <div className="header-container">
+       <img className="header-img" src="./Images/header-img.png" />
       <div className="search-container">
         
         <form className="menu-search-form" method="POST">
