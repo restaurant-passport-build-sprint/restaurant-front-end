@@ -11,6 +11,15 @@ const Restaurant = styled.div`
   border: 4px solid #39491c;
   margin: 1%;
 
+  @media (max-width: 850px){
+    width: 47.5%;
+    margin: 1% auto;
+  }
+
+  @media (max-width: 630px){
+    width: 85%
+  }
+
   .card-header{
     background-color: #39491c
   }
