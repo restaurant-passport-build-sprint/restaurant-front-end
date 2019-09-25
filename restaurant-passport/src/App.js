@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Link, Route} from "react-router-dom";
 
@@ -9,6 +9,9 @@ import Hero from './Components/Hero';
 import List from './Components/RestaurantList';
 import RestaurantSingle from './Components/RestaurantSingle';
 
+
+import RestaurantList from "./Components/RestaurantList"
+import RestaurantSingle from "./Components/RestaurantSingle"
 
 
 function App() {

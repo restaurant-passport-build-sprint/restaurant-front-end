@@ -4,7 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import styled from "styled-components";
 import axiosWithAuth from './AxiosWithAuth';
 const CardList = styled.div`
-  width: 50%;
+  width: 100%;
   max-width: 1080px;
   min-width: 400px;
   margin: 0 auto;
