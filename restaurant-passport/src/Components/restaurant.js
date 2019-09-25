@@ -1,4 +1,3 @@
-
 export default [{
     restaurant_name: "Pizza Hut",
     restaurant_type: "Italian-American cuisine",
