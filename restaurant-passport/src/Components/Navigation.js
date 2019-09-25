@@ -1,7 +1,7 @@
 import React, {Component}from "react";
 // import logo from '../Images/logofp.png';
 import {Link} from 'react-router-dom';
-import {FaAlignRight} from 'react-icons/fa';
+
 
 // export default class Navbar extends Component {
 //   state={

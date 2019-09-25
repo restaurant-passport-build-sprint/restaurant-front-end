@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../restaurant.js";
+import  data  from "../restaurant.js";
 import RestaurantCard from "./RestaurantCard";
 import styled from "styled-components";
 
