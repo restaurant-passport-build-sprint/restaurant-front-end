@@ -1,3 +1,4 @@
+
 export default [{
     restaurant_name: "Pizza Hut",
     restaurant_type: "Italian-American cuisine",
@@ -76,4 +77,3 @@ export default [{
     wait_time: "40min",
     date_of_visit: "01/30/2019"
   }]
-

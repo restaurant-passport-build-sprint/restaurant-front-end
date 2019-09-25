@@ -1,5 +1,4 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
 
 const FooterContainer = styled.div`
   display: flex;
@@ -24,13 +23,9 @@ const FooterContainer = styled.div`
   }
 `;
 export default function Footer() {
-  return (
-    <FooterContainer>
-      <div>
-        
-        <p>Need Help? 24/7 Live Chat Available <a href="#"><i className="fas fa-comment"></i></a></p>
-      </div>
-      <p>&copy;2019 FoodiePass</p>
-    </FooterContainer>
-  );
+    return (
+        <div>
+            
+        </div>
+    )
 }
