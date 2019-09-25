@@ -4,8 +4,28 @@ import styled from "styled-components";
 const SingleContainer = styled.div`
   height: 86vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-top: 10%;
+  width: 100%;
+
+  @media (max-width: 1600px){
+    flex-direction:column;
+    text-align:left;
+    img{
+      width: 90%;
+      margin: 0 auto;
+      height: 100%;
+    }
+    div{
+      width: 100%;
+    }
+    .descriptions{
+      align-self:center;
+    }
+    .imagedesc{
+      align-self:center;
+    }
+  }
 
   div {
     display: flex;
@@ -13,26 +33,12 @@ const SingleContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin-top: 10%;
-  }
-
-  .descriptions{
-      align-self:flex-start;
-      align-items:flex-start;
-      text-align:left;
-  }
-
-  .imagedesc{
-      align-self: flex-start;
   }
 
   img{
       max-height:50%;
   }
 
-  p {
-    width: 30%;
-  }
 `;
 
 export default function RestaurantSingle(props) {
@@ -42,7 +48,7 @@ export default function RestaurantSingle(props) {
   );
   console.log("restaurant", restaurant);
   return (
-    <SingleContainer>
+    <SingleContainer className="single-container">
       <div className="imagedesc">
         <img src={restaurant.photo_of_order} />
       </div>
