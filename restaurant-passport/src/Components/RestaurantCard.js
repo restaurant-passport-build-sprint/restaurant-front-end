@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Link} from "react";
 import styled from "styled-components";
 
 const Restaurant = styled.div`
@@ -43,7 +43,7 @@ const Restaurant = styled.div`
 
 export default function RestaurantCard(props) {
   return (
-    <RestaurantDiv>
+    <Restaurant>
     <Link to={`/restaurant-list/${props.id}`}>
       <div id={props.id}>
         <div className="card-text">
@@ -58,6 +58,7 @@ export default function RestaurantCard(props) {
           <p>Your Review: {props.comments}</p>
         </div>
       </div>
-    </RestaurantDiv>
+      </Link>
+    </Restaurant>
   );
 }

@@ -5,7 +5,7 @@ import RegisterForm from "./Components/signup"
 import Home from "./Components/Home"
 import Navigation from "./Components/Navigation"
 import Hero from './Components/Hero';
-
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Navigation />
       <Route exact path="/" component={Home} /> 
       <Route path="/signup" component={RegisterForm} /> 
+      <Footer/>
     </div>
   );
 }
