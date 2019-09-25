@@ -48,11 +48,10 @@ export default function RestaurantSingle(props) {
       </div>
       <div className="descriptions">
         <h1>{restaurant.restaurant_name}</h1>
-        <p>
-          {restaurant.restaurant_name} is a {restaurant.restaurant_type}{" "}
-          restaurant. It has an average rating of {restaurant.food_rating}/5
-          stars. You last visited this restaurant on {restaurant.date_of_visit}.
-        </p>
+        <h2>{restaurant.restaurant_type}</h2>
+        <h2>Your Rating: {restaurant.food_rating}/5</h2>
+        <h2>You paid ${restaurant.price} on your last visit on {restaurant.date_of_visit}</h2>
+        <h2>After the last visit, you said "{restaurant.comments}"</h2>
       </div>
     </SingleContainer>
   );
