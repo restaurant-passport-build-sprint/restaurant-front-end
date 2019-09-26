@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Route } from "react-router-dom";
 import Home from "./Components/Home";
-import Navigation from "./Components/Navigation";
+import Header from "./Components/Header";
 import SignupLogin from './Components/signupLoginPage';
 import RestaurantList from './Components/RestaurantList';
 import RestaurantSingle from './Components/RestaurantSingle';
@@ -10,10 +10,11 @@ import Footer from "./Components/Footer"
 
 
 
+
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <Header />
 
       <Route exact path="/" component={Home} />
       <Route exact path="/signup" component={SignupLogin} />

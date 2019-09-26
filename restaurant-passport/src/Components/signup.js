@@ -30,6 +30,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
         <Field type="text" name="Name" placeholder="Name" />
       </div>  */}
       <div>
+        <label>
         {touched.city && errors.city && <p>{errors.city}</p>}
         <Field type="text" name="City" placeholder="City" />
         </label>

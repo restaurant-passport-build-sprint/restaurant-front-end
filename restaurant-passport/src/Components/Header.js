@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <div className="nav-container">
       <nav className="menu">
-        <img className="menu-logo" src="./Images/logofp.png" />
+        <img className="menu-logo" src="https://imgur.com/OEuk0hQ.png" />
         <h1>FoodiePass</h1>
         <div className="navigation">
           <ul className="menu-list">
@@ -38,3 +38,6 @@ export default function Navigation() {
     </div>
   );
 }
+
+
+
