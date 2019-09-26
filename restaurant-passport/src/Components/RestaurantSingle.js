@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import axiosWithAuth from "./AxiosWithAuth"
 
 const SingleContainer = styled.div`
   height: 86vh;
@@ -42,22 +43,28 @@ const SingleContainer = styled.div`
 `;
 
 export default function RestaurantSingle(props) {
-  console.log("restaurant single", props);
-  const restaurant = props.items.find(
-    thing => thing.user_id === Number(props.match.params.id)
-  );
-  console.log("restaurant", restaurant);
+  const [restList, setRestList] = useState([]);
+  useEffect(()=>{
+    axiosWithAuth()
+    .get(`https://foodie-pass.herokuapp.com/auth/api/${props.match.params.id}`)
+    .then (res=>{
+      setRestList(res.data.data)
+    })
+    .catch(err=>{
+      console.log(err.response)
+    })
+  },[])
   return (
     <SingleContainer className="single-container">
       <div className="imagedesc">
-        <img src={restaurant.photo_of_order} />
+        <img src={restList.photo_of_order} />
       </div>
       <div className="descriptions">
-        <h1>{restaurant.restaurant_name}</h1>
-        <h2>{restaurant.restaurant_type}</h2>
-        <h2>Your Rating: {restaurant.food_rating}/5</h2>
-        <h2>You paid ${restaurant.price} on your last visit on {restaurant.date_of_visit}</h2>
-        <h2>After the last visit, you said "{restaurant.comments}"</h2>
+        <h1>{restList.restaurant_name}</h1>
+        <h2>{restList.restaurant_type}</h2>
+        <h2>Your Rating: {restList.food_rating}/5</h2>
+        <h2>You paid ${restList.price} on your last visit on {restList.date_of_visit}</h2>
+        <h2>After the last visit, you said "{restList.comments}"</h2>
       </div>
     </SingleContainer>
   );
