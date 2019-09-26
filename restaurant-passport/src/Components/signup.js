@@ -20,7 +20,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
       {/* <div>
         {touched.name && errors.name && <p>{errors.name}</p>}
         <Field type="text" name="Name" placeholder="Name" />
-      </div>
+      </div>  */}
       <div>
         {touched.city && errors.city && <p>{errors.city}</p>}
         <Field type="text" name="City" placeholder="City" />
@@ -28,7 +28,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
       <div>
         {touched.email && errors.email && <p>{errors.email}</p>}
         <Field type="email" name="email" placeholder="email" />
-      </div> */}
+      </div>
       
       <button disabled={isSubmitting}>Signup &rarr;</button>
       </div>
@@ -43,8 +43,8 @@ const FormikRegisterForm = withFormik({
       username: username || "",
       password: password || "",
       // name: name || "",
-      // city: city || "",
-      // email: email || "",
+       city: city || "",
+       email: email || "",
     };
   },
   validationSchema: Yup.object().shape({
