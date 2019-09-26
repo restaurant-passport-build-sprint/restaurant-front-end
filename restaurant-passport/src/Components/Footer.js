@@ -3,29 +3,29 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 import styled from "styled-components";
 
+const NavLinksbox = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-bottom: 10px;
+  }
+`;
+
+const Bulletlist = styled.li`
+  color: white;
+`;
+
+const BulletGroup = styled.div`
+  display: flex;
+  @media screen and (max-width: 500px) {
+  }
+`;
+
 export default function Footer() {
-  const NavLinksbox = styled.div`
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    @media screen and (max-width: 500px) {
-      display: flex;
-      flex-wrap: wrap;
-      width: 90%;
-      padding-bottom: 10px;
-    }
-  `;
-
-  const Bulletlist = styled.li`
-    color: white;
-  `;
-
-  const BulletGroup = styled.div`
-    display: flex;
-    @media screen and (max-width: 500px) {
-    }
-  `;
-
   return (
     <nav className="footer">
       {/* Logo- of fork and knife in red pin point*/}
@@ -39,25 +39,25 @@ export default function Footer() {
       </div>
 
       <NavLinksbox>
-        <Link className="navword" to="/privacypolicy">
+        <Link className="navword" to="/">
           Privacy
         </Link>
 
         <Bulletlist className="bulletpoint">
-          <Link className="navword" to="/contact">
+          <Link className="navword" to="/">
             Help
           </Link>
         </Bulletlist>
 
         <Bulletlist className="bulletpoint">
-          <Link className="navword" to="/aboutus">
+          <Link className="navword" to="/">
             About Us
           </Link>
         </Bulletlist>
 
         <BulletGroup>
           <Bulletlist>
-            <Link className="navword" activeclassname="active" to="/terms">
+            <Link className="navword" activeclassname="active" to="/">
               Terms and Conditions
             </Link>
           </Bulletlist>

@@ -12,6 +12,11 @@ const Restaurant = styled.div`
   border: 4px solid #39491c;
   margin: 1%;
 
+  &:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+
   @media (max-width: 850px){
     width: 47.5%;
     margin: 1% auto;
@@ -33,6 +38,10 @@ const Restaurant = styled.div`
     bottom: 0;
     right: 0;
     color: #39491c;
+
+    .card-h2{
+      background-color: #39491C;
+    }
 
     h2 {
       font-size: 2.2rem;
@@ -63,8 +72,9 @@ export default function RestaurantCard(props) {
     <Link to={`/restaurant-list/${props.id}`}>
       <div id={props.id}>
         <div className="card-text">
-          <i class="fas fa-pepper-hot"></i>
+          <div className="card-h2">
           <h2>{props.name}</h2>
+          </div>
           <p>
             Cuisine: {props.type}
           </p>
@@ -72,6 +82,7 @@ export default function RestaurantCard(props) {
           <p>You Rated It: {props.rating} / 5</p>
           <p>You Spent: ${props.price}</p>
           <p>Your Review: {props.comments}</p>
+          <i class="fas fa-pepper-hot"></i>
         </div>
       </div></Link>
     </Restaurant>

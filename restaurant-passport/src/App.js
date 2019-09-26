@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Navigation />
 
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" render={props => <Home {...props} />} />
       <Route exact path="/signup" component={SignupLogin} />
       <Route exact path="/restaurant-list" render={props => <RestaurantList  {...props} />} />
       <Route path="/restaurant-list/:id" render={props => <RestaurantSingle  {...props} />} />

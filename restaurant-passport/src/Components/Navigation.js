@@ -1,5 +1,4 @@
 import React, {Component}from "react";
-// import logo from '../Images/logofp.png';
 import {Link} from 'react-router-dom';
 
 
@@ -13,24 +12,19 @@ export default function Navigation() {
         <div className="navigation">
           <ul className="menu-list">
             <li className="menu-list-item">
-              <a className="menu-link-active" href="#">
+              <Link className="menu-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
-                About
-              </a>
+            <Link className="menu-link" to="/restaurant-list">
+                Visited Restaurants
+              </Link>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
-                contact
-              </a>
-            </li>
-            <li className="menu-list-item">
-              <a className="menu-link" href="/signup">
-                SignUp
-              </a>
+            <Link className="menu-link" to="/signup">
+                Signup / Login
+              </Link>
             </li>
           </ul>{" "}
         </div>
