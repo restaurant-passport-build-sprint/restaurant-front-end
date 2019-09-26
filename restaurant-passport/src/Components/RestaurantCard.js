@@ -1,6 +1,6 @@
-import React, {Link} from "react";
+import React from "react";
 import styled from "styled-components";
-
+import {Link} from 'react-router-dom';
 
 const Restaurant = styled.div`
   width: 30%;
@@ -58,20 +58,20 @@ const Restaurant = styled.div`
 export default function RestaurantCard(props) {
   return (
     <Restaurant>
-      <Link to={`/restaurant-list/${props.id}`}>
-        <div id={props.id}>
-          <div className="card-text">
-            <div className="card-header">
-              <h2>{props.name}</h2>
-            </div>
-            <p>Cuisine: {props.type}</p>
-            <p>Visited On: {props.date}</p>
-            <p>You Rated It: {props.rating} / 5</p>
-            <p>You Spent: ${props.price}</p>
-            <p>Your Review: {props.comments}</p>
-            <i class="fas fa-pepper-hot"></i>
-          </div>
+    <Link to={`/restaurant-list/${props.id}`}>
+      <div id={props.id}>
+        <div className="card-text">
+          <i class="fas fa-pepper-hot"></i>
+          <h2>{props.name}</h2>
+          <p>
+            Cuisine: {props.type}
+          </p>
+          <p>Visited On: {props.date}</p>
+          <p>You Rated It: {props.rating} / 5</p>
+          <p>You Spent: ${props.price}</p>
+          <p>Your Review: {props.comments}</p>
         </div>
+      </div>
       </Link>
     </Restaurant>
   );

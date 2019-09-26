@@ -17,7 +17,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
         {touched.password && errors.password && <p>{errors.password}</p>}
         <Field type="password" name="password" placeholder="Password" />
       </div>
-      <div>
+      {/* <div>
         {touched.name && errors.name && <p>{errors.name}</p>}
         <Field type="text" name="Name" placeholder="Name" />
       </div>
@@ -28,7 +28,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
       <div>
         {touched.email && errors.email && <p>{errors.email}</p>}
         <Field type="email" name="email" placeholder="email" />
-      </div>
+      </div> */}
       
       <button disabled={isSubmitting}>Signup &rarr;</button>
       </div>
@@ -42,9 +42,9 @@ const FormikRegisterForm = withFormik({
     return {
       username: username || "",
       password: password || "",
-      name: name || "",
-      city: city || "",
-      email: email || "",
+      // name: name || "",
+      // city: city || "",
+      // email: email || "",
     };
   },
   validationSchema: Yup.object().shape({
@@ -53,20 +53,14 @@ const FormikRegisterForm = withFormik({
     password: Yup.string()
       .min(6, "Password must be 6 characters or longer")
       .required("Password is required"),
-    name: Yup.string()
-      .required('name is required'),
-    city: Yup.string()
-      .required('city is required'),
-    email: Yup.string()
-    .email("Email not valid")
-    .required('Email is required'),
+    
   }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     if (values.email === "alreadytaken@atb.dev") {
       setErrors({ email: "That email is already taken" });
     } else {
       axios
-        .post("", values)
+        .post("https://foodie-pass.herokuapp.com/auth/register", values)
         .then(res => {
           console.log(res); // Data was created successfully and logs to console
           resetForm();
@@ -79,5 +73,5 @@ const FormikRegisterForm = withFormik({
     }
   }
 })(RegisterForm);
- //export default RegisterForm;
+
 export default FormikRegisterForm;

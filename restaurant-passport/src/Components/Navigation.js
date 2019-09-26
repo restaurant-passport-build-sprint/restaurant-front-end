@@ -11,7 +11,7 @@ export default function Navigation() {
         <img className="menu-logo" src="./Images/logofp.png" />
         <h1>FoodiePass</h1>
         <div className="navigation">
-          <ul classname="menu-list">
+          <ul className="menu-list">
             <li className="menu-list-item">
               <a className="menu-link-active" href="#">
                 Home
@@ -28,7 +28,7 @@ export default function Navigation() {
               </a>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
+              <a className="menu-link" href="/signup">
                 SignUp
               </a>
             </li>
