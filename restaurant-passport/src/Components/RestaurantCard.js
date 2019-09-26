@@ -60,7 +60,6 @@ export default function RestaurantCard(props) {
   console.log("card props", props)
   return (
     <Restaurant>
-    <RestaurantSingle className="hidden" items={props}/>
     <Link to={`/restaurant-list/${props.id}`}>
       <div id={props.id}>
         <div className="card-text">
