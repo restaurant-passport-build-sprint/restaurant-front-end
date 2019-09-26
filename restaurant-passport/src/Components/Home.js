@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from "./Header"
-import RestaurantList from "./RestaurantList"
+import Hero from "./Hero"
+
+
 
 export default function Home() {
     return (
-        <div>
-            <Header />
-            <RestaurantList />
-        </div>
+    <div>
+       <Hero/>
+    </div>
     )
 }

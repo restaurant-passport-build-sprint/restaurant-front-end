@@ -25,16 +25,11 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
         <Field type="password" name="password" placeholder="Password" />
         </label>
       </div>
-      <div className="name">
-        <label>
-          Name:
+      {/* <div>
         {touched.name && errors.name && <p>{errors.name}</p>}
         <Field type="text" name="Name" placeholder="Name" />
-        </label>
-      </div>
-      <div calssname="city">
-        <label>
-          City:
+      </div>  */}
+      <div>
         {touched.city && errors.city && <p>{errors.city}</p>}
         <Field type="text" name="City" placeholder="City" />
         </label>
@@ -62,9 +57,9 @@ const FormikRegisterForm = withFormik({
     return {
       username: username || "",
       password: password || "",
-      name: name || "",
-      city: city || "",
-      email: email || "",
+      // name: name || "",
+       city: city || "",
+       email: email || "",
     };
   },
   validationSchema: Yup.object().shape({
@@ -73,20 +68,14 @@ const FormikRegisterForm = withFormik({
     password: Yup.string()
       .min(6, "Password must be 6 characters or longer")
       .required("Password is required"),
-    name: Yup.string()
-      .required('name is required'),
-    city: Yup.string()
-      .required('city is required'),
-    email: Yup.string()
-    .email("Email not valid")
-    .required('Email is required'),
+    
   }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     if (values.email === "alreadytaken@atb.dev") {
       setErrors({ email: "That email is already taken" });
     } else {
       axios
-        .post("", values)
+        .post("https://foodie-pass.herokuapp.com/auth/register", values)
         .then(res => {
           console.log(res); // Data was created successfully and logs to console
           resetForm();
@@ -99,5 +88,5 @@ const FormikRegisterForm = withFormik({
     }
   }
 })(RegisterForm);
- //export default RegisterForm;
+
 export default FormikRegisterForm;
