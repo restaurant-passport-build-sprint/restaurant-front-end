@@ -3,10 +3,10 @@ import Hero from "./Hero"
 
 
 
-export default function Home() {
+export default function Home(props) {
     return (
     <div>
-       <Hero/>
+       <Hero {...props}/>
     </div>
     )
 }
