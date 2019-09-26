@@ -6,8 +6,8 @@ import axios from "axios";
 
 function RegisterForm({ values, errors, touched, isSubmitting }) {
   return (
-      
-    <Form>
+    <div className="login">
+    <Form className="signinForm">
     <div className='mainForm_Display'>
       <div className="form">
         <h1>Create Account</h1>
@@ -31,6 +31,7 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
       </div>  */}
       <div>
         <label>
+          City:
         {touched.city && errors.city && <p>{errors.city}</p>}
         <Field type="text" name="City" placeholder="City" />
         </label>
@@ -49,7 +50,12 @@ function RegisterForm({ values, errors, touched, isSubmitting }) {
       </div>
       </div>
     </Form>
-    
+    <img
+        src="https://imgur.com/SprDWQt.png"
+        alt="Delicious Pasta"
+        className="loginImage"
+      />
+    </div>  
   );
 }
 

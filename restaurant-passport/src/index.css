@@ -121,13 +121,16 @@ p{
 }
 
 .mainForm_Display{
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #264d00;
+  margin-left: 15px;
+}
+.loginform{
+  background-color: #F3C65D;
 }
 
 .form{
@@ -170,3 +173,23 @@ h1{
 .header-container{
   height:33vh;
 }
+
+.login {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.signinForm {
+  background: #fffefa;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginImage {
+  height: auto;
+  width: 60%;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
