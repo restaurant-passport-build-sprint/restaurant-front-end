@@ -6,7 +6,7 @@ import axios from "axios";
 
 function LoginForm({ values, errors, touched, isSubmitting }) {
   return (
-      
+     <div className="loginform">
     <Form>
       <div>
         {touched.username && errors.username && <p>{errors.username}</p>}
@@ -19,6 +19,7 @@ function LoginForm({ values, errors, touched, isSubmitting }) {
       
       <button type="submit" disabled={isSubmitting}>Login &rarr;</button>
     </Form>
+    </div> 
     
   );
 }
