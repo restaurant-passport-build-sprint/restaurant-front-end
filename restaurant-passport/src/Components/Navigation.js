@@ -13,24 +13,19 @@ export default function Navigation() {
         <div className="navigation">
           <ul className="menu-list">
             <li className="menu-list-item">
-              <a className="menu-link-active" href="#">
+              <Link className="menu-link-active" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
-                About
-              </a>
+            <Link className="menu-link-active" to="/restaurant-list">
+                Visited Restaurants
+              </Link>
             </li>
             <li className="menu-list-item">
-              <a className="menu-link" href="#">
-                contact
-              </a>
-            </li>
-            <li className="menu-list-item">
-              <a className="menu-link" href="/signup">
-                SignUp
-              </a>
+            <Link className="menu-link-active" to="/signup">
+                Signup / Login
+              </Link>
             </li>
           </ul>{" "}
         </div>
