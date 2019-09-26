@@ -1,39 +1,70 @@
-import React from 'react'
-import styled  from 'styled-components';
-const FooterContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1vw;
-  background-color: #f5f5f5;
-  height: 7vh;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
+import styled from "styled-components";
 
-  .fas {
-    font-size: 2.2rem;
-    color: black;
-    opacity: 0.5;
-    margin-left: 10px;
-  }
-  .fas:hover {
-    transform: scale(1.3);
-    transition: 0.4s;
-  }
-`;
 export default function Footer() {
+  const NavLinksbox = styled.div`
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    @media screen and (max-width: 500px) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      padding-bottom: 10px;
+    }
+  `;
+
+  const Bulletlist = styled.li`
+    color: white;
+  `;
+
+  const BulletGroup = styled.div`
+    display: flex;
+    @media screen and (max-width: 500px) {
+    }
+  `;
+
   return (
-    <FooterContainer>
-      <div>
-        <p>
-          Need Help? 24/7 Live Chat Available{" "}
-          <a href="#">
-            <i className="fas fa-comment"></i>
-          </a>
-        </p>
+    <nav className="footer">
+      {/* Logo- of fork and knife in red pin point*/}
+
+      <div className="Logoholder">
+        <img
+          className="LogoFooter"
+          src="https://imgur.com/OEuk0hQ.png"
+          alt="Logo"
+        />
       </div>
-      <p>&copy;2019 FoodiePass</p>
-    </FooterContainer>
+
+      <NavLinksbox>
+        <Link className="navword" to="/privacypolicy">
+          Privacy
+        </Link>
+
+        <Bulletlist className="bulletpoint">
+          <Link className="navword" to="/contact">
+            Help
+          </Link>
+        </Bulletlist>
+
+        <Bulletlist className="bulletpoint">
+          <Link className="navword" to="/aboutus">
+            About Us
+          </Link>
+        </Bulletlist>
+
+        <BulletGroup>
+          <Bulletlist>
+            <Link className="navword" activeclassname="active" to="/terms">
+              Terms and Conditions
+            </Link>
+          </Bulletlist>
+        </BulletGroup>
+      </NavLinksbox>
+
+      <p className="copyright"> {"\u00A9"} 2019 RestaurantPassport</p>
+    </nav>
   );
 }
